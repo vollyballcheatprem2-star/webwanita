@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ruang Hormat — Menghargai Wanita, Dimulai dari Cara Kita Melihat Manusia</title>
+  <meta name="description" content="Ruang belajar tentang rasa hormat, kesetaraan, dan cara memperlakukan perempuan dengan baik — lewat hal-hal kecil yang sering luput kita sadari." />
+  <meta name="theme-color" content="#FAF9F7" />
+  <meta property="og:title" content="Ruang Hormat — Belajar Memperlakukan Manusia dengan Layak" />
+  <meta property="og:description" content="Menghargai wanita bukan sekadar berkata sopan. Ia hidup dalam cara kita mendengarkan, menjaga batasan, dan menghargai pilihan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/seed/ruang-hormat-og/1200/630" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Loading screen ===== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <svg viewBox="0 0 32 32" width="34" height="34" fill="none" aria-hidden="true">
+        <circle cx="12" cy="16" r="8.4" stroke="#B76E79" stroke-width="1.4"/>
+        <circle cx="20" cy="16" r="8.4" stroke="#B76E79" stroke-width="1.4"/>
+        <path d="M16 19.6c-2.3-1.6-3.5-3.1-3.5-4.6 0-1.2.9-2.1 2-2.1.6 0 1.2.3 1.5.8.3-.5.9-.8 1.5-.8 1.1 0 2 .9 2 2.1 0 1.5-1.2 3-3.5 4.6z" fill="#8E4B55"/>
+      </svg>
+      <span class="loader-word">Ruang <em>Hormat</em></span>
+    </div>
+    <span class="loader-line"><span class="loader-fill"></span></span>
+  </div>
+
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- ===== Custom cursor (desktop saja) ===== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#beranda" aria-label="Ruang Hormat — kembali ke atas">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true">
+          <circle cx="12" cy="16" r="8.4" stroke="currentColor" stroke-width="1.5" opacity=".55"/>
+          <circle cx="20" cy="16" r="8.4" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 19.6c-2.3-1.6-3.5-3.1-3.5-4.6 0-1.2.9-2.1 2-2.1.6 0 1.2.3 1.5.8.3-.5.9-.8 1.5-.8 1.1 0 2 .9 2 2.1 0 1.5-1.2 3-3.5 4.6z" fill="#B76E79"/>
+        </svg>
+        <span class="brand-text">Ruang <em>Hormat</em></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#beranda" data-nav="beranda">Beranda</a>
+        <a href="#mengapa" data-nav="mengapa">Mengapa Penting</a>
+        <a href="#cara" data-nav="cara">Cara Menghargai</a>
+        <a href="#refleksi" data-nav="refleksi">Refleksi</a>
+      </nav>
+
+      <a class="btn btn-ghost btn-sm nav-cta" href="#prinsip">Lima Prinsip</a>
+
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="menuOverlay" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Menu mobile ===== -->
+  <div class="menu-overlay" id="menuOverlay">
+    <nav class="menu-list" aria-label="Navigasi seluler">
+      <a class="menu-link" href="#beranda"><span class="m-num">01</span>Beranda</a>
+      <a class="menu-link" href="#mengapa"><span class="m-num">02</span>Mengapa Penting</a>
+      <a class="menu-link" href="#cara"><span class="m-num">03</span>Cara Menghargai</a>
+      <a class="menu-link" href="#refleksi"><span class="m-num">04</span>Refleksi</a>
+    </nav>
+    <p class="menu-foot">Belajar melihat manusia dengan lebih banyak empati.</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow anim" style="--d:.15s"><span class="tick" aria-hidden="true"></span>Belajar tentang rasa hormat</p>
+
+          <h1 id="hero-title" class="anim" style="--d:.3s">
+            Menghargai wanita dimulai dari <em>cara kita melihat</em> manusia.
+          </h1>
+
+          <p class="hero-sub anim" style="--d:.46s">
+            Bukan tentang menjadi sempurna. Bukan pula tentang mengatakan hal-hal yang terdengar indah.
+            Rasa hormat terlihat dari bagaimana kita mendengarkan, menjaga batasan, menghargai pilihan,
+            dan memperlakukan seseorang dengan tulus.
+          </p>
+
+          <div class="hero-actions anim" style="--d:.6s">
+            <a class="btn btn-primary" href="#cara">Mulai Membaca <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#refleksi">Renungkan Sebentar</a>
+          </div>
+
+          <ul class="hero-meta anim" style="--d:.74s">
+            <li>Mendengarkan</li>
+            <li>Menjaga Batasan</li>
+            <li>Menghargai Pilihan</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-frame anim-img" style="--d:.5s">
+            <img src="https://picsum.photos/seed/woman-morning-window-reading/900/1125" width="900" height="1125"
+                 alt="Seorang perempuan membaca buku di dekat jendela dengan cahaya pagi yang lembut" fetchpriority="high" />
+          </figure>
+
+          <div class="chip chip-1 anim-chip" style="--d:1.05s"><span class="chip-dot"></span>Respect</div>
+          <div class="chip chip-2 anim-chip" style="--d:1.2s"><span class="chip-dot"></span>Empathy</div>
+          <div class="chip chip-3 anim-chip" style="--d:1.35s"><span class="chip-dot"></span>Boundaries</div>
+          <div class="chip chip-4 anim-chip" style="--d:1.5s"><span class="chip-dot"></span>Equality</div>
+        </div>
+      </div>
+
+      <div class="hero-cue anim" style="--d:1.3s" aria-hidden="true">
+        <span class="cue-line"></span>
+        <span>Gulir perlahan</span>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="mq-set">
+          <span>Mendengarkan</span><i>✳</i><span>Empati</span><i>✳</i><span>Batasan</span><i>✳</i>
+          <span>Pilihan</span><i>✳</i><span>Kesetaraan</span><i>✳</i><span>Persetujuan</span><i>✳</i>
+          <span>Martabat</span><i>✳</i><span>Kelembutan</span><i>✳</i>
+        </div>
+        <div class="mq-set">
+          <span>Mendengarkan</span><i>✳</i><span>Empati</span><i>✳</i><span>Batasan</span><i>✳</i>
+          <span>Pilihan</span><i>✳</i><span>Kesetaraan</span><i>✳</i><span>Persetujuan</span><i>✳</i>
+          <span>Martabat</span><i>✳</i><span>Kelembutan</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Mengapa penting ===== -->
+    <section class="sec why" id="mengapa" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <aside class="sec-side">
+          <p class="eyebrow rv"><span class="tick" aria-hidden="true"></span>01 — Mengapa penting</p>
+          <h2 id="why-title" class="rv" style="--d:.1s">Rasa hormat jarang terdengar keras. Tapi selalu terasa.</h2>
+        </aside>
+
+        <div class="why-body">
+          <p class="lede rv">
+            Kita sering mengira menghargai seseorang berarti melakukan hal besar — membela, memuji,
+            atau hadir di momen penting. Padahal rasa hormat lebih sering hidup di tempat yang sunyi:
+            di jeda sebelum kita menjawab, di nada suara saat berbeda pendapat, di keputusan kecil
+            untuk tidak memaksa.
+          </p>
+
+          <p class="rv" style="--d:.08s">
+            Kadang kita merasa sudah menghargai seseorang hanya karena kita tidak menyakitinya.
+            Padahal rasa hormat jauh lebih luas dari itu. Ia meminta kita hadir — bukan sekadar
+            ada secara fisik, tetapi hadir dengan perhatian.
+          </p>
+
+          <blockquote class="pull-quote rv" style="--d:.14s">
+            “Menghargai wanita bukan sekadar berkata sopan. Menghargai berarti mendengarkan,
+            menghormati batasan, menjaga sikap, menghargai pilihan, dan memperlakukan perempuan
+            sebagai manusia yang memiliki martabat, perasaan, impian, dan hak yang sama untuk dihormati.”
+          </blockquote>
+
+          <div class="vignettes" data-stagger>
+            <figure class="vig vig-tall rv">
+              <img src="https://picsum.photos/seed/woman-walking-city-dawn/620/780" width="620" height="780"
+                   alt="Perempuan berjalan sendirian di jalanan kota yang tenang" loading="lazy" />
+              <figcaption>Berjalan dengan tujuannya sendiri.</figcaption>
+            </figure>
+            <figure class="vig rv">
+              <img src="https://picsum.photos/seed/woman-working-studio-desk/620/460" width="620" height="460"
+                   alt="Perempuan sedang bekerja fokus di meja kerjanya" loading="lazy" />
+              <figcaption>Bekerja untuk mimpinya sendiri.</figcaption>
+            </figure>
+            <figure class="vig vig-tall rv">
+              <img src="https://picsum.photos/seed/woman-student-library-books/620/780" width="620" height="780"
+                   alt="Mahasiswi belajar di antara rak buku perpustakaan" loading="lazy" />
+              <figcaption>Belajar menjadi dirinya sendiri.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Apa artinya menghargai ===== -->
+    <section class="sec meaning" id="cara" aria-labelledby="cara-title">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow rv"><span class="tick" aria-hidden="true"></span>02 — Maknanya</p>
+            <h2 id="cara-title" class="rv" style="--d:.08s">Menghargai bukan sekadar bersikap baik.</h2>
+          </div>
+          <p class="sec-intro rv" style="--d:.16s">
+            Rasa hormat hadir dalam hal-hal kecil yang sering kita anggap sepele. Cara kita berbicara,
+            cara kita mendengarkan, cara kita menerima kata “tidak”, hingga bagaimana kita menghormati
+            pilihan seseorang ketika pilihan itu berbeda dengan keinginan kita.
+          </p>
+        </div>
+
+        <div class="m-grid" data-stagger>
+          <article class="m-card rv">
+            <span class="m-num" aria-hidden="true">01</span>
+            <span class="m-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <circle cx="9" cy="12" r="2.4"/><path d="M4.5 9.2a6.4 6.4 0 0 1 9 0M3 6.4a10 10 0 0 1 12.4-.4"/><path d="M12.6 15.4 19 20.5"/>
+              </svg>
+            </span>
+            <h3>Mendengarkan</h3>
+            <p>Berikan ruang untuk berbicara tanpa buru-buru memotong, meremehkan, atau menganggap perasaannya tidak penting.</p>
+          </article>
+
+          <article class="m-card rv">
+            <span class="m-num" aria-hidden="true">02</span>
+            <span class="m-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="10" r="2.2"/><path d="M8.4 16.6c.7-1.9 2-2.9 3.6-2.9s2.9 1 3.6 2.9"/>
+              </svg>
+            </span>
+            <h3>Menghormati Batasan</h3>
+            <p>Tidak semua kedekatan memberikan kita hak untuk melewati batas pribadi seseorang.</p>
+          </article>
+
+          <article class="m-card rv">
+            <span class="m-num" aria-hidden="true">03</span>
+            <span class="m-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M5 19V9.5C5 6.5 7 5 9.5 5H19"/><path d="M12 19v-5.5c0-2 1.4-3 3.2-3H19"/><circle cx="19" cy="5" r="1.6"/><circle cx="19" cy="19" r="1.6"/>
+              </svg>
+            </span>
+            <h3>Menghargai Pilihan</h3>
+            <p>Setiap perempuan memiliki hak untuk menentukan jalan hidup, pendidikan, pekerjaan, hubungan, dan keputusan untuk dirinya sendiri.</p>
+          </article>
+
+          <article class="m-card rv">
+            <span class="m-num" aria-hidden="true">04</span>
+            <span class="m-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M2.8 12S6.2 6.2 12 6.2 21.2 12 21.2 12 17.8 17.8 12 17.8 2.8 12 2.8 12Z"/><circle cx="12" cy="12" r="2.6"/>
+              </svg>
+            </span>
+            <h3>Menjaga Sikap</h3>
+            <p>Rasa hormat tetap penting bahkan ketika tidak ada orang lain yang melihat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quote gelap ===== -->
+    <section class="sec quote-sec" aria-label="Kutipan tentang empati">
+      <div class="container">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p class="quote" data-split>Seseorang tidak perlu menjadi seperti yang kita inginkan untuk layak dihormati.</p>
+        <p class="quote-by rv">— Sebuah pengingat tentang empati dan batasan pribadi.</p>
+      </div>
+    </section>
+
+    <!-- ===== Hal-hal kecil ===== -->
+    <section class="sec small-things" id="hal-kecil" aria-labelledby="kecil-title">
+      <div class="container">
+        <p class="eyebrow rv"><span class="tick" aria-hidden="true"></span>03 — Hal-hal kecil yang berarti</p>
+        <h2 id="kecil-title" class="rv" style="--d:.08s">Kadang, rasa hormat terlihat dari hal yang sederhana.</h2>
+
+        <ol class="st-list" data-stagger>
+          <li class="rv"><span class="st-num">01</span><p>Mendengarkan tanpa memotong.</p></li>
+          <li class="rv"><span class="st-num">02</span><p>Tidak menjadikan penampilan seseorang sebagai bahan candaan.</p></li>
+          <li class="rv"><span class="st-num">03</span><p>Menghormati kata “tidak”.</p></li>
+          <li class="rv"><span class="st-num">04</span><p>Tidak memaksa seseorang membalas perhatian.</p></li>
+          <li class="rv"><span class="st-num">05</span><p>Tidak menyebarkan cerita pribadi tanpa izin.</p></li>
+          <li class="rv"><span class="st-num">06</span><p>Memberikan ruang ketika seseorang membutuhkannya.</p></li>
+          <li class="rv"><span class="st-num">07</span><p>Menghargai pencapaian tanpa membandingkan.</p></li>
+          <li class="rv"><span class="st-num">08</span><p>Berbicara dengan sopan, bahkan ketika sedang berbeda pendapat.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Respect is not control ===== -->
+    <section class="sec kontrol" id="kontrol" aria-labelledby="kontrol-title">
+      <div class="container kontrol-grid">
+        <figure class="kontrol-fig rv-l rv">
+          <img src="https://picsum.photos/seed/two-friends-talking-park-bench/840/1050" width="840" height="1050"
+               alt="Dua orang duduk berbicara dengan tenang di bangku taman" loading="lazy" />
+          <figcaption>Dua orang yang saling menghargai tidak saling mengecilkan.</figcaption>
+        </figure>
+
+        <div class="kontrol-copy">
+          <p class="eyebrow rv"><span class="tick" aria-hidden="true"></span>04 — Tentang kendali</p>
+          <h2 id="kontrol-title" class="rv" style="--d:.08s">Menghargai bukan berarti mengendalikan.</h2>
+          <p class="rv" style="--d:.14s">
+            Perhatian tidak sama dengan kepemilikan. Rasa sayang tidak memberikan seseorang hak untuk
+            mengatur seluruh kehidupan orang lain. Hubungan yang sehat membutuhkan kepercayaan,
+            komunikasi, batasan, dan kebebasan untuk tetap menjadi diri sendiri.
+          </p>
+
+          <div class="cmp-list" data-stagger>
+            <div class="cmp-row">
+              <div class="cmp-card good rv-l rv">
+                <span class="cmp-label">Perhatian
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5"/></svg>
+                </span>
+                <p>“Apakah kamu baik-baik saja?”</p>
+              </div>
+              <span class="vs" aria-hidden="true">vs</span>
+              <div class="cmp-card bad rv-r rv">
+                <span class="cmp-label">Kontrol
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+                </span>
+                <p>“Kamu harus melakukan apa yang aku bilang.”</p>
+              </div>
+            </div>
+
+            <div class="cmp-row">
+              <div class="cmp-card good rv-l rv">
+                <span class="cmp-label">Perhatian
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5"/></svg>
+                </span>
+                <p>“Aku menghargai keputusanmu.”</p>
+              </div>
+              <span class="vs" aria-hidden="true">vs</span>
+              <div class="cmp-card bad rv-r rv">
+                <span class="cmp-label">Kontrol
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+                </span>
+                <p>“Kamu tidak boleh memilih itu.”</p>
+              </div>
+            </div>
+
+            <div class="cmp-row">
+              <div class="cmp-card good rv-l rv">
+                <span class="cmp-label">Perhatian
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5"/></svg>
+                </span>
+                <p>“Aku ingin mendengarkan.”</p>
+              </div>
+              <span class="vs" aria-hidden="true">vs</span>
+              <div class="cmp-card bad rv-r rv">
+                <span class="cmp-label">Kontrol
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+                </span>
+                <p>“Aku sudah tahu apa yang kamu rasakan.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Kata-kata ===== -->
+    <section class="sec words" id="kata" aria-labelledby="kata-title">
+      <div class="container">
+        <p class="eyebrow eyebrow-center rv"><span class="tick" aria-hidden="true"></span>05 — Kata-kata juga bisa meninggalkan jejak</p>
+        <h2 id="kata-title" class="words-title rv" style="--d:.08s">Sebelum berbicara, pikirkan bagaimana kata-kata itu akan terasa ketika diterima orang lain.</h2>
+        <p class="flip-hint rv" style="--d:.14s">Ketuk kartu untuk melihat cara yang lebih baik.</p>
+
+        <div class="flip-grid" data-stagger>
+          <button type="button" class="flip rv" aria-pressed="false">
+            <span class="flip-inner">
+              <span class="flip-face flip-front">
+                <span class="flip-tag flip-tag-no">Jangan</span>
+                <span class="flip-text">“Perempuan kok terlalu sensitif?”</span>
+                <span class="flip-hint-s">Balik ↺</span>
+              </span>
+              <span class="flip-face flip-back">
+                <span class="flip-tag flip-tag-yes">Lebih baik</span>
+                <span class="flip-text flip-text-alt">
